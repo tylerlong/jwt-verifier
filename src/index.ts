@@ -15,18 +15,15 @@ console.log(process.env.jwks_uri);
     keys[key.kid] = await parseJwk(key);
   }
 
-  const {payload, protectedHeader} = await jwtVerify(
+  let result = await jwtVerify(
     process.env.assertion!,
     keys[process.env.assertion_kid!]
   );
+  console.log(result);
 
-  console.log(payload, protectedHeader);
+  result = await jwtVerify(
+    process.env.client_assertion!,
+    keys[process.env.client_assertion_kid!]
+  );
+  console.log(result);
 })();
-
-/*
-
-const assertion = await new SignJWT(jwtData.body)
-    .setProtectedHeader(jwtData.header)
-    .sign(await parseJwk(keys.privateKey1));
-
-*/
