@@ -1,4 +1,4 @@
-# JWT assertions decoder
+# JWT Verifier
 
 
 ## Setup
