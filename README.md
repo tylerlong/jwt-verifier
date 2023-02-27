@@ -1,5 +1,9 @@
 # JWT Verifier
 
+This tool could verify your JWT payloads on your computer (without talking to the remote JWT service server).
+It is useful when the remote server complains that your assertions are invalid and you don't know why they are invalid.
+Run this tool to (possibly) get a detailed error report.
+
 
 ## Setup
 
