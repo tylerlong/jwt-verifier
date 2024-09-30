@@ -13,6 +13,7 @@ yarn install
 
 Rename `.env.sample` to `.env` and specify credentials.
 
+Edit `src/public-keys.json` to replace its content with your public keys.
 
 ## Credentials explained
 
@@ -20,7 +21,6 @@ Rename `.env.sample` to `.env` and specify credentials.
 - **assertion_kid**: RSA key ID for assertion signing
 - **client_assertion**: signed client assertion string
 - **client_assertion_kid**: RSA key ID for client assertion signing
-- **jwks_uri**: URI where RSA public keys are hosted, should be accessible by the current computer.
 
 
 ## Run

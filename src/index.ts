@@ -1,17 +1,11 @@
-import axios from 'axios';
 import * as jose from 'jose';
 
-import {KeyStore} from './types';
-
-console.log(process.env.jwks_uri);
+import keyStore from './public-keys.json';
 
 (async () => {
-  const r = await axios.get(process.env.jwks_uri!);
-  const keyStore = r.data as KeyStore;
-  console.log(keyStore);
-  const keys: any = {};
+  const keys: {[kid: string]: jose.KeyLike} = {};
   for (const key of keyStore.keys) {
-    keys[key.kid] = await jose.importJWK(key);
+    keys[key.kid] = (await jose.importJWK(key)) as jose.KeyLike;
   }
 
   let result = await jose.jwtVerify(
