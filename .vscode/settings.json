@@ -3,7 +3,7 @@
     {
       "match": "\\.tsx?",
       "isAsync": true,
-      "cmd": "cd '${workspaceRoot}' && yarn gts fix '${file}'",
+      "cmd": "cd '${workspaceRoot}' && pnpm gts fix '${file}'",
       "event": "onFileChange"
     }
   ]
