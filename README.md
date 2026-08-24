@@ -8,12 +8,12 @@ Run this tool to (possibly) get a detailed error report.
 ## Setup
 
 ```
-yarn install
+pnpm install
 ```
 
 Rename `.env.sample` to `.env` and specify credentials.
 
-Edit `src/public-keys.json` to replace its content with your public keys.
+Rename `src/public-keys.sample.json` to `src/public-keys.json` and replace its content with your public keys.
 
 ## Credentials explained
 
@@ -26,5 +26,5 @@ Edit `src/public-keys.json` to replace its content with your public keys.
 ## Run
 
 ```
-yarn test
+pnpm test
 ```
