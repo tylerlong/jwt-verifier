@@ -3,7 +3,7 @@
 	"packageManager": "pnpm@11.22.0",
 	"type": "module",
 	"scripts": {
-		"check": "biome check .",
+		"check": "biome check . --write",
 		"test": "tsx -r dotenv-override-true/config src/index.ts"
 	},
 	"dependencies": {
