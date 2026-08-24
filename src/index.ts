@@ -1,6 +1,6 @@
 import * as jose from "jose";
 
-import keyStore from "./public-keys.json";
+import keyStore from "./public-keys.json" with { type: "json" };
 
 (async () => {
 	const keys: { [kid: string]: jose.KeyLike } = {};

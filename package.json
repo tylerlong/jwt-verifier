@@ -1,6 +1,7 @@
 {
 	"license": "MIT",
 	"packageManager": "pnpm@11.22.0",
+	"type": "module",
 	"scripts": {
 		"check": "biome check .",
 		"test": "tsx -r dotenv-override-true/config src/index.ts"
