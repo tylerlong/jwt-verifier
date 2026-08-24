@@ -1,17 +1,18 @@
 {
-  "license": "MIT",
-  "packageManager": "pnpm@11.22.0",
-  "scripts": {
-    "test": "ts-node -r dotenv-override-true/config src/index.ts"
-  },
-  "dependencies": {
-    "dotenv-override-true": "^6.2.2",
-    "jose": "^5.9.3"
-  },
-  "devDependencies": {
-    "@types/node": "^22.7.4",
-    "gts": "^5.3.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
-  }
+	"license": "MIT",
+	"packageManager": "pnpm@11.22.0",
+	"scripts": {
+		"check": "biome check .",
+		"test": "ts-node -r dotenv-override-true/config src/index.ts"
+	},
+	"dependencies": {
+		"dotenv-override-true": "^6.2.2",
+		"jose": "^5.9.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.9",
+		"@types/node": "^22.7.4",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.6.2"
+	}
 }
