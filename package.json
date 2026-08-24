@@ -3,7 +3,7 @@
 	"packageManager": "pnpm@11.22.0",
 	"scripts": {
 		"check": "biome check .",
-		"test": "ts-node -r dotenv-override-true/config src/index.ts"
+		"test": "tsx -r dotenv-override-true/config src/index.ts"
 	},
 	"dependencies": {
 		"dotenv-override-true": "^6.2.2",
@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.5.9",
 		"@types/node": "^22.7.4",
-		"ts-node": "^10.9.2",
+		"tsx": "4.23.12",
 		"typescript": "^5.6.2"
 	}
 }
